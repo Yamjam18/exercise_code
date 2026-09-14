@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <input id="display" type="text" value="0" readonly>
+
+    <div class="buttons">
+
+        <!-- FILA 1 -->
+         <button class="gray" onclick="deleteLast()">⌫</button>
+        <button class="gray" onclick="clearDisplay()">C</button>
+        <button class="gray" onclick="percentage()">%</button>
+        <button class="orange" onclick="addOperator('/')">÷</button>
+
+        <!-- FILA 2 -->
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button onclick="addNumber('9')">9</button>
+        <button class="orange" onclick="addOperator('*')">×</button>
+
+        <!-- FILA 3 -->
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+        <button class="orange" onclick="addOperator('-')">−</button>
+
+        <!-- FILA 4 -->
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+        <button class="orange" onclick="addOperator('+')">+</button>
+
+        <!-- FILA 5 -->
+        <button class="gray" onclick="toggleSign()">+/-</button>
+        <button class="zero" onclick="addNumber('0')">0</button>
+        <button onclick="addNumber('.')">.</button>
+        <button class="orange" onclick="calculate()">=</button>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
